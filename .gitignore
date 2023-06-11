@@ -49,3 +49,6 @@ logs
 # Ignore all local history of files
 .history
 .ionide
+
+# backup files
+_src_backup/
