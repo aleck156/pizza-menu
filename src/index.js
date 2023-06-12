@@ -20,7 +20,9 @@ function Header() {
 function Menu() {}
 
 function Footer() {
-  return React.createElement("footer", null, "We're currently open!");
+  return (
+    <footer>{new Date().toLocaleDateString()}. We're currently open</footer>
+  );
 }
 
 function Pizza() {
