@@ -8,6 +8,7 @@ function App() {
       <Pizza />
       <Pizza />
       <Pizza />
+      <Footer />
     </div>
   );
 }
@@ -18,7 +19,9 @@ function Header() {
 
 function Menu() {}
 
-function Footer() {}
+function Footer() {
+  return React.createElement("footer", null, "We're currently open!");
+}
 
 function Pizza() {
   return (
