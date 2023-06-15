@@ -25,12 +25,12 @@ function Header() {
 
 function Menu() {
   return (
-    <div>
-      <h2>Menu</h2>
+    <main className="menu">
+      <h2>Our Menu</h2>
       <Pizza test="My Text" />
       <Pizza />
       <Pizza />
-    </div>
+    </main>
   );
 }
 
