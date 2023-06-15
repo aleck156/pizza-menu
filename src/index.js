@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import "./index.css";
+
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />
@@ -12,7 +14,13 @@ function App() {
 }
 
 function Header() {
-  return <h1 style={{ color: "red" }}>Fast React Pizza Co.</h1>;
+  // const style = { color: "red", fontSize: "32px", textTransform: "uppercase" };
+
+  return (
+    <header>
+      <h1 className="header">Fast React Pizza Co.</h1>
+    </header>
+  );
 }
 
 function Menu() {
