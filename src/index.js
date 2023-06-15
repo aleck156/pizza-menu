@@ -29,7 +29,7 @@ function Menu() {
       <h2>Our Menu</h2>
       <Pizza
         name="Pizza Spinachi"
-        components="Tomato, mozarella, spinach and ricotta cheese"
+        ingredients="Tomato, mozarella, spinach and ricotta cheese"
       />
     </main>
   );
@@ -52,7 +52,7 @@ function Pizza(props) {
     <div>
       <img src="pizzas/spinaci.jpg" alt="Pizza spinaci" />
       <h3>{props.name}</h3>
-      <p>{props.components}</p>
+      <p>{props.ingredients}</p>
     </div>
   );
 }
