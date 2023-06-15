@@ -12,14 +12,14 @@ function App() {
 }
 
 function Header() {
-  return <h1>Fast React Pizza Co.</h1>;
+  return <h1 style={{ color: "red" }}>Fast React Pizza Co.</h1>;
 }
 
 function Menu() {
   return (
     <div>
       <h2>Menu</h2>
-      <Pizza />
+      <Pizza test="My Text" />
       <Pizza />
       <Pizza />
     </div>
@@ -40,12 +40,13 @@ function Footer() {
   );
 }
 
-function Pizza() {
+function Pizza(props) {
   return (
     <div>
       <img src="pizzas/spinaci.jpg" alt="Pizza spinaci" />
       <h2>Pizza</h2>
       <p>Some text</p>
+      <p>{props.test}</p>
     </div>
   );
 }
