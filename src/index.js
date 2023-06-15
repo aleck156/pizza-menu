@@ -27,9 +27,10 @@ function Menu() {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza test="My Text" />
-      <Pizza />
-      <Pizza />
+      <Pizza
+        name="Pizza Spinachi"
+        components="Tomato, mozarella, spinach and ricotta cheese"
+      />
     </main>
   );
 }
@@ -50,9 +51,8 @@ function Pizza(props) {
   return (
     <div>
       <img src="pizzas/spinaci.jpg" alt="Pizza spinaci" />
-      <h3>Pizza Spinaci</h3>
-      <p>Tomato, mozarella, spinach and ricotta cheese</p>
-      <p>{props.test}</p>
+      <h3>{props.name}</h3>
+      <p>{props.components}</p>
     </div>
   );
 }
